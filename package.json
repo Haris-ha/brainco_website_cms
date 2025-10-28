@@ -1,8 +1,8 @@
 {
   "name": "brainco-website-cms",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "A Strapi application",
+  "description": "BrainCo 官网内容管理系统 - BrainCo Website Content Management System",
   "scripts": {
     "build": "strapi build",
     "console": "strapi console",
