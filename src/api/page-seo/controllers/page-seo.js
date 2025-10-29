@@ -80,3 +80,5 @@ module.exports = createCoreController('api::page-seo.page-seo', ({ strapi }) => 
   },
 }));
 
+
+

@@ -1,6 +1,6 @@
 /**
  * BrainCo SEO Data Import Script
- * 批量导入 SEO 配置到 Strapi
+ * 批量导入 SEO 配置到 Strapi (PostgreSQL 版本)
  * 
  * 使用方法:
  * 1. 确保 Strapi 正在运行 (pnpm run develop)
@@ -41,6 +41,18 @@ const stats = {
 };
 
 /**
+ * 映射语言代码（JSON 中的语言代码 -> Strapi 语言代码）
+ */
+function mapLocale(locale) {
+  const localeMap = {
+    'zh-Hans': 'zh-Hans',
+    'en': 'en',
+    'zh-Hant': 'zh-Hant'
+  };
+  return localeMap[locale] || locale;
+}
+
+/**
  * 创建或更新 SEO 配置
  */
 async function createOrUpdateSEO(page) {
@@ -50,18 +62,21 @@ async function createOrUpdateSEO(page) {
     stats.total++;
     
     try {
-      console.log(`\n📝 Processing: ${pageName} (${locale})`);
+      const strapiLocale = mapLocale(locale);
+      console.log(`\n📝 Processing: ${pageName} (${locale} -> ${strapiLocale})`);
       
       // 检查是否已存在
-      const existingUrl = `${STRAPI_URL}/api/page-seos?filters[pageName][$eq]=${pageName}&filters[locale][$eq]=${locale}&locale=${locale}`;
+      const existingUrl = `${STRAPI_URL}/api/page-seos?filters[pageName][$eq]=${pageName}&filters[locale][$eq]=${strapiLocale}&locale=${strapiLocale}`;
       const existingResponse = await fetch(existingUrl, {
         headers: {
           'Authorization': `Bearer ${API_TOKEN}`,
+          'Content-Type': 'application/json',
         },
       });
       
       if (!existingResponse.ok) {
-        throw new Error(`Failed to check existing entry: ${existingResponse.statusText}`);
+        const errorText = await existingResponse.text();
+        throw new Error(`Failed to check existing entry (${existingResponse.status}): ${errorText}`);
       }
       
       const existingData = await existingResponse.json();
@@ -71,10 +86,10 @@ async function createOrUpdateSEO(page) {
       const data = {
         pageName,
         pagePath,
-        locale,
+        locale: strapiLocale,
         metaTitle: seoContent.metaTitle,
         metaDescription: seoContent.metaDescription,
-        keywords: seoContent.keywords,
+        keywords: seoContent.keywords || '',
         metaRobots: 'index,follow',
         canonicalURL: seoContent.canonicalURL || null,
         ogTitle: seoContent.ogTitle || seoContent.metaTitle,
@@ -83,7 +98,6 @@ async function createOrUpdateSEO(page) {
         twitterCard: 'summary_large_image',
         twitterTitle: seoContent.ogTitle || seoContent.metaTitle,
         twitterDescription: seoContent.ogDescription || seoContent.metaDescription,
-        publishedAt: new Date().toISOString(),
       };
       
       let response;
@@ -93,7 +107,7 @@ async function createOrUpdateSEO(page) {
         const existingId = existingData.data[0].id;
         console.log(`   ↻ Updating existing entry (ID: ${existingId})`);
         
-        response = await fetch(`${STRAPI_URL}/api/page-seos/${existingId}?locale=${locale}`, {
+        response = await fetch(`${STRAPI_URL}/api/page-seos/${existingId}?locale=${strapiLocale}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -110,7 +124,7 @@ async function createOrUpdateSEO(page) {
         // 创建新条目
         console.log(`   + Creating new entry`);
         
-        response = await fetch(`${STRAPI_URL}/api/page-seos?locale=${locale}`, {
+        response = await fetch(`${STRAPI_URL}/api/page-seos?locale=${strapiLocale}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -120,14 +134,36 @@ async function createOrUpdateSEO(page) {
         });
         
         if (response.ok) {
+          const result = await response.json();
           stats.created++;
           console.log(`   ✅ Created successfully`);
+          
+          // 立即发布
+          if (result.data && result.data.id) {
+            await fetch(`${STRAPI_URL}/api/page-seos/${result.data.id}?locale=${strapiLocale}`, {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${API_TOKEN}`,
+              },
+              body: JSON.stringify({
+                data: {
+                  publishedAt: new Date().toISOString(),
+                },
+              }),
+            });
+          }
         }
       }
       
       if (!response.ok) {
         const errorText = await response.text();
-        throw new Error(`HTTP ${response.status}: ${errorText}`);
+        let errorMessage = `HTTP ${response.status}: ${errorText}`;
+        // 如果是权限错误，提供更详细的提示
+        if (response.status === 401 || response.status === 403) {
+          errorMessage += '\n   ⚠️  提示：请确保 API Token 有 "Full access" 权限，并且 Page SEO 的权限已正确配置';
+        }
+        throw new Error(errorMessage);
       }
       
     } catch (error) {
@@ -143,7 +179,7 @@ async function createOrUpdateSEO(page) {
  * 主函数
  */
 async function main() {
-  console.log('🚀 BrainCo SEO Data Import Script\n');
+  console.log('🚀 BrainCo SEO Data Import Script (PostgreSQL)\n');
   console.log(`📍 Strapi URL: ${STRAPI_URL}`);
   console.log(`📦 Total pages to import: ${seoData.pages.length}`);
   console.log(`📊 Total SEO entries: ${seoData.pages.length * 3} (3 locales per page)\n`);
@@ -164,9 +200,12 @@ async function main() {
   
   if (stats.errors.length > 0) {
     console.log('\n❌ Errors:\n');
-    stats.errors.forEach((error, index) => {
+    stats.errors.slice(0, 10).forEach((error, index) => {
       console.log(`   ${index + 1}. ${error}`);
     });
+    if (stats.errors.length > 10) {
+      console.log(`   ... and ${stats.errors.length - 10} more errors`);
+    }
   }
   
   console.log('\n✨ Import completed!\n');
@@ -181,4 +220,3 @@ main().catch(error => {
   console.error('\n💥 Fatal error:', error);
   process.exit(1);
 });
-

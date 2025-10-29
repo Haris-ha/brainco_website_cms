@@ -37,6 +37,7 @@ async function deleteAllEntries() {
     const response = await fetch(`${STRAPI_URL}/api/page-seos?pagination[limit]=100`, {
       headers: {
         'Authorization': `Bearer ${API_TOKEN}`,
+        'Content-Type': 'application/json',
       },
     });
     
@@ -56,6 +57,7 @@ async function deleteAllEntries() {
           method: 'DELETE',
           headers: {
             'Authorization': `Bearer ${API_TOKEN}`,
+            'Content-Type': 'application/json',
           },
         });
         
@@ -86,12 +88,21 @@ async function createSEO(page) {
   
   for (const [locale, seoContent] of Object.entries(locales)) {
     try {
-      console.log(`📝 Creating: ${pageName} (${locale})`);
+      // 映射语言代码
+      const localeMap = {
+        'zh-Hans': 'zh-Hans',
+        'en': 'en',
+        'zh-Hant': 'zh-Hant'
+      };
+      const strapiLocale = localeMap[locale] || locale;
       
-      // 准备数据（简化版本，不包含 locale 字段）
+      console.log(`📝 Creating: ${pageName} (${locale} -> ${strapiLocale})`);
+      
+      // 准备数据
       const data = {
         pageName,
         pagePath,
+        locale: strapiLocale,
         metaTitle: seoContent.metaTitle,
         metaDescription: seoContent.metaDescription,
         keywords: seoContent.keywords || '',
@@ -106,7 +117,7 @@ async function createSEO(page) {
       };
       
       // 创建新条目
-      const response = await fetch(`${STRAPI_URL}/api/page-seos?locale=${locale}`, {
+      const response = await fetch(`${STRAPI_URL}/api/page-seos?locale=${strapiLocale}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -122,7 +133,7 @@ async function createSEO(page) {
         // 立即发布
         const result = await response.json();
         if (result.data && result.data.id) {
-          await fetch(`${STRAPI_URL}/api/page-seos/${result.data.id}`, {
+          await fetch(`${STRAPI_URL}/api/page-seos/${result.data.id}?locale=${strapiLocale}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
@@ -198,4 +209,5 @@ main().catch(error => {
   console.error('\n💥 Fatal error:', error);
   process.exit(1);
 });
+
 

@@ -23,6 +23,7 @@ async function deleteAllEntries() {
       const response = await fetch(`${STRAPI_URL}/api/page-seos?pagination[limit]=100&pagination[start]=0`, {
         headers: {
           'Authorization': `Bearer ${API_TOKEN}`,
+          'Content-Type': 'application/json',
         },
       });
       
@@ -47,6 +48,7 @@ async function deleteAllEntries() {
             method: 'DELETE',
             headers: {
               'Authorization': `Bearer ${API_TOKEN}`,
+              'Content-Type': 'application/json',
             },
           });
           
@@ -78,4 +80,5 @@ deleteAllEntries().catch(error => {
   console.error('\n💥 Fatal error:', error);
   process.exit(1);
 });
+
 
