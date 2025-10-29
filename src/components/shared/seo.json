@@ -2,25 +2,81 @@
   "collectionName": "components_shared_seos",
   "info": {
     "name": "Seo",
-    "icon": "allergies",
-    "displayName": "Seo",
-    "description": ""
+    "icon": "search",
+    "displayName": "SEO 配置",
+    "description": "完整的多语言SEO配置，包括TDK、社交媒体和Schema"
   },
   "options": {},
   "attributes": {
     "metaTitle": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 60,
+      "minLength": 10
     },
     "metaDescription": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 160,
+      "minLength": 50
     },
-    "shareImage": {
+    "keywords": {
+      "type": "text",
+      "required": false
+    },
+    "metaRobots": {
+      "type": "string",
+      "default": "index,follow"
+    },
+    "canonicalURL": {
+      "type": "string",
+      "required": false
+    },
+    "ogTitle": {
+      "type": "string",
+      "required": false,
+      "maxLength": 60
+    },
+    "ogDescription": {
+      "type": "text",
+      "required": false,
+      "maxLength": 160
+    },
+    "ogImage": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": ["images"]
+    },
+    "ogType": {
+      "type": "enumeration",
+      "enum": ["website", "article", "product"],
+      "default": "website"
+    },
+    "twitterCard": {
+      "type": "enumeration",
+      "enum": ["summary", "summary_large_image", "app", "player"],
+      "default": "summary_large_image"
+    },
+    "twitterTitle": {
+      "type": "string",
+      "required": false,
+      "maxLength": 60
+    },
+    "twitterDescription": {
+      "type": "text",
+      "required": false,
+      "maxLength": 160
+    },
+    "twitterImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "structuredData": {
+      "type": "json",
+      "required": false
     }
   }
 }

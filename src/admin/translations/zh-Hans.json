@@ -631,6 +631,8 @@
   "global.enabled": "已启用",
   "global.finish": "完成",
   "global.marketplace": "市场",
+  "global.home": "首页",
+  "global.deploy": "部署",
   "global.name": "名称",
   "global.none": "无",
   "global.password": "密码",
@@ -772,5 +774,10 @@
   "plugin::content-manager.last-edited-entries.content-type-plural": "最近编辑的条目",
   "plugin::content-manager.last-edited-entries.content-type-singular": "最近编辑的条目",
   "plugin::content-manager.last-edited-entries.content-type-plural-singular": "最近编辑的条目",
-  "home.plugin.name": "首页"
+  
+  "User": "用户",
+  "Global": "全局",
+  "search.placeholder": "搜索",
+  "Page SEO": "页面SEO配置",
+  "page-seo": "页面SEO配置"
 }

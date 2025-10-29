@@ -3,7 +3,7 @@ module.exports = () => ({
         enabled: true,
         config: {
           defaultLocale: 'zh-Hans',
-          locales: ['zh-Hans', 'en'], 
+          locales: ['zh-Hans', 'en', 'zh-Hant'], 
         },
       },
 });
