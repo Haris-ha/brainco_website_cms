@@ -679,13 +679,6 @@ export interface ApiPageSeoPageSeo extends Struct.CollectionTypeSchema {
         };
       }>;
     publishedAt: Schema.Attribute.DateTime;
-    publisher: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }> &
-      Schema.Attribute.DefaultTo<'BrainCo'>;
     structuredData: Schema.Attribute.JSON &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

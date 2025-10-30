@@ -67,16 +67,6 @@
       },
       "required": true
     },
-    "publisher": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "default": "BrainCo",
-      "required": false
-    },
     "metaRobots": {
       "type": "string",
       "pluginOptions": {
@@ -157,21 +147,6 @@
         "product"
       ]
     },
-    "twitterCard": {
-      "type": "enumeration",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "default": "summary_large_image",
-      "enum": [
-        "summary",
-        "summary_large_image",
-        "app",
-        "player"
-      ]
-    },
     "twitterTitle": {
       "type": "string",
       "pluginOptions": {
@@ -203,6 +178,21 @@
       "required": false,
       "allowedTypes": [
         "images"
+      ]
+    },
+    "twitterCard": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": "summary_large_image",
+      "enum": [
+        "summary",
+        "summary_large_image",
+        "app",
+        "player"
       ]
     },
     "structuredData": {
