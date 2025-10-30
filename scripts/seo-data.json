@@ -1,6 +1,33 @@
 {
   "pages": [
     {
+      "pageName": "home",
+      "pagePath": "/",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "BrainCo强脑科技 - 全球领先的脑机接口技术公司 | 智能仿生手·脑控轮椅·专注力训练",
+          "metaDescription": "BrainCo强脑科技是源自哈佛的脑机接口技术领导者，拥有200+核心专利。提供智能仿生手、脑控轮椅、专注力训练、康复机器人等创新产品，服务教育、医疗康复、健康管理领域。",
+          "keywords": "BrainCo, 强脑科技, 脑机接口, BCI技术, 智能仿生手, 脑控轮椅, 专注力训练, 康复机器人, 非侵入式脑机接口",
+          "ogTitle": "BrainCo强脑科技 - 用脑科学技术改变世界",
+          "ogDescription": "哈佛创新实验室孵化，200+专利技术，服务全球60+国家。提供智能仿生手、脑控轮椅、专注力训练等创新脑机接口解决方案。"
+        },
+        "en": {
+          "metaTitle": "BrainCo - Global Leader in Brain-Computer Interface Technology | Prosthetics·Wheelchairs·Focus Training",
+          "metaDescription": "BrainCo is a Harvard-born BCI technology leader with 200+ patents. Offering prosthetic hands, brain-controlled wheelchairs, focus training, and rehabilitation robots for education, healthcare, and wellness.",
+          "keywords": "BrainCo, brain-computer interface, BCI technology, prosthetic hand, brain-controlled wheelchair, focus training, rehabilitation robot, non-invasive BCI",
+          "ogTitle": "BrainCo - Changing the World with Neuroscience",
+          "ogDescription": "Harvard Innovation Lab graduate with 200+ patents, serving 60+ countries. Innovative BCI solutions including prosthetic hands, wheelchairs, and focus training."
+        },
+        "zh-Hant": {
+          "metaTitle": "BrainCo強腦科技 - 全球領先的腦機接口技術公司 | 智能仿生手·腦控輪椅·專注力訓練",
+          "metaDescription": "BrainCo強腦科技是源自哈佛的腦機接口技術領導者，擁有200+核心專利。提供智能仿生手、腦控輪椅、專注力訓練、康復機器人等創新產品，服務教育、醫療康復、健康管理領域。",
+          "keywords": "BrainCo, 強腦科技, 腦機接口, BCI技術, 智能仿生手, 腦控輪椅, 專注力訓練, 康復機器人, 非侵入式腦機接口",
+          "ogTitle": "BrainCo強腦科技 - 用腦科學技術改變世界",
+          "ogDescription": "哈佛創新實驗室孵化，200+專利技術，服務全球60+國家。提供智能仿生手、腦控輪椅、專注力訓練等創新腦機接口解決方案。"
+        }
+      }
+    },
+    {
       "pageName": "about",
       "pagePath": "/about",
       "locales": {
@@ -105,33 +132,6 @@
           "keywords": "腦機接口技術, BCI技術, 腦電信號, EEG, 神經反饋, 人工智能算法, 核心專利",
           "ogTitle": "BrainCo腦機接口技術 - 科研驅動的創新突破",
           "ogDescription": "200+專利技術，哈佛科學家團隊，引領全球腦機接口技術創新。"
-        }
-      }
-    },
-    {
-      "pageName": "products",
-      "pagePath": "/products",
-      "locales": {
-        "zh-Hans": {
-          "metaTitle": "产品中心 - BrainCo智能脑机接口产品 | 教育健康康复全场景",
-          "metaDescription": "探索BrainCo全系列脑机接口产品：智能仿生手、脑控轮椅、专注力训练头环、睡眠改善设备等。覆盖教育、医疗康复、健康管理多个领域的创新解决方案。",
-          "keywords": "BrainCo产品, 脑机接口产品, 智能仿生手, 专注力头环, 睡眠改善, 教育科技产品",
-          "ogTitle": "BrainCo产品 - 用脑科学技术改变生活",
-          "ogDescription": "从教育到医疗，从专注力提升到睡眠改善，BrainCo为您提供全方位脑机接口解决方案。"
-        },
-        "en": {
-          "metaTitle": "Products - BrainCo BCI Solutions | Education & Health",
-          "metaDescription": "Explore BrainCo's BCI products: prosthetic hands, wheelchairs, focus headbands, sleep devices. Solutions for education and healthcare.",
-          "keywords": "BrainCo products, BCI products, prosthetic hand, focus headband, sleep improvement, education technology",
-          "ogTitle": "BrainCo Products - Transform Life with Neuroscience",
-          "ogDescription": "From education to healthcare, from focus enhancement to sleep improvement, BrainCo offers comprehensive BCI solutions."
-        },
-        "zh-Hant": {
-          "metaTitle": "產品中心 - BrainCo智能腦機接口產品 | 教育健康康復全場景",
-          "metaDescription": "探索BrainCo全系列腦機接口產品：智能仿生手、腦控輪椅、專注力訓練頭環、睡眠改善設備等。覆蓋教育、醫療康復、健康管理多個領域的創新解決方案。",
-          "keywords": "BrainCo產品, 腦機接口產品, 智能仿生手, 專注力頭環, 睡眠改善, 教育科技產品",
-          "ogTitle": "BrainCo產品 - 用腦科學技術改變生活",
-          "ogDescription": "從教育到醫療，從專注力提升到睡眠改善，BrainCo為您提供全方位腦機接口解決方案。"
         }
       }
     },
