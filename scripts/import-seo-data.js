@@ -14,6 +14,7 @@ const path = require('path');
 
 const STRAPI_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 const API_TOKEN = process.env.STRAPI_API_TOKEN;
+const SITE_URL = process.env.SITE_URL || 'https://www.brainco.cn';
 
 if (!API_TOKEN) {
   console.error('❌ Error: STRAPI_API_TOKEN environment variable is not set!');
@@ -50,6 +51,43 @@ function mapLocale(locale) {
     'zh-Hant': 'zh-Hant'
   };
   return localeMap[locale] || locale;
+}
+
+/**
+ * 映射 Strapi locale 到 URL locale
+ */
+function mapLocaleToURL(strapiLocale) {
+  const urlLocaleMap = {
+    'zh-Hans': 'zh-CN',
+    'en': 'en-US',
+    'zh-Hant': 'zh-TW'
+  };
+  return urlLocaleMap[strapiLocale] || 'zh-CN';
+}
+
+/**
+ * 生成 canonical URL
+ */
+function generateCanonicalURL(pagePath, strapiLocale) {
+  const urlLocale = mapLocaleToURL(strapiLocale);
+  const localePrefix = urlLocale === 'zh-CN' ? '' : `/${urlLocale}`;
+  return `${SITE_URL}${localePrefix}${pagePath}`;
+}
+
+/**
+ * 生成 Publisher 的 Structured Data (Schema.org)
+ */
+function generatePublisherSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'BrainCo',
+    'url': SITE_URL,
+    'logo': `${SITE_URL}/logo.webp`,
+    'sameAs': [
+      // 可以添加社交媒体链接
+    ]
+  };
 }
 
 /**
@@ -91,13 +129,16 @@ async function createOrUpdateSEO(page) {
         metaDescription: seoContent.metaDescription,
         keywords: seoContent.keywords || '',
         metaRobots: 'index,follow',
-        canonicalURL: seoContent.canonicalURL || null,
+        canonicalURL: seoContent.canonicalURL || generateCanonicalURL(pagePath, strapiLocale),
         ogTitle: seoContent.ogTitle || seoContent.metaTitle,
         ogDescription: seoContent.ogDescription || seoContent.metaDescription,
         ogType: 'website',
         twitterCard: 'summary_large_image',
         twitterTitle: seoContent.ogTitle || seoContent.metaTitle,
         twitterDescription: seoContent.ogDescription || seoContent.metaDescription,
+        structuredData: generatePublisherSchema(),
+        publisher: 'BrainCo',
+        xRobotsTag: 'index, follow',
       };
       
       let response;

@@ -11,69 +11,89 @@ if (!API_TOKEN) {
 }
 
 async function deleteAllEntries() {
-  console.log('🧹 Cleaning all Page SEO entries...\n');
+  console.log('🧹 Cleaning all Page SEO entries (all locales)...\n');
   
   let totalDeleted = 0;
-  let hasMore = true;
+  const locales = ['zh-Hans', 'en', 'zh-Hant'];
   
-  // 持续删除直到没有更多数据
-  while (hasMore) {
+  // 先收集所有要删除的ID
+  let allEntriesToDelete = [];
+  
+  for (const locale of locales) {
+    console.log(`\n🔍 Collecting entries for locale: ${locale}`);
+    let page = 1;
+    let hasMore = true;
+    
+    while (hasMore) {
+      try {
+        const response = await fetch(
+          `${STRAPI_URL}/api/page-seos?locale=${locale}&pagination[page]=${page}&pagination[pageSize]=100`,
+          {
+            headers: {
+              'Authorization': `Bearer ${API_TOKEN}`,
+              'Content-Type': 'application/json',
+            },
+          }
+        );
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch entries: ${response.statusText}`);
+        }
+        
+        const result = await response.json();
+        const entries = result.data || [];
+        
+        if (entries.length === 0) {
+          hasMore = false;
+          break;
+        }
+        
+        console.log(`   Found ${entries.length} entries on page ${page}`);
+        allEntriesToDelete = allEntriesToDelete.concat(
+          entries.map(e => ({ id: e.id, pageName: e.pageName, locale }))
+        );
+        
+        // 检查是否还有更多页
+        const pagination = result.meta?.pagination;
+        if (pagination && page < pagination.pageCount) {
+          page++;
+        } else {
+          hasMore = false;
+        }
+      } catch (error) {
+        console.error('❌ Error fetching:', error.message);
+        hasMore = false;
+      }
+    }
+  }
+  
+  console.log(`\n📊 Total entries to delete: ${allEntriesToDelete.length}\n`);
+  
+  // 现在删除所有收集到的条目
+  for (const entry of allEntriesToDelete) {
     try {
-      // 每次获取100条
-      const response = await fetch(`${STRAPI_URL}/api/page-seos?pagination[limit]=100&pagination[start]=0`, {
+      const deleteResponse = await fetch(`${STRAPI_URL}/api/page-seos/${entry.id}`, {
+        method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${API_TOKEN}`,
           'Content-Type': 'application/json',
         },
       });
       
-      if (!response.ok) {
-        throw new Error(`Failed to fetch entries: ${response.statusText}`);
+      if (deleteResponse.ok) {
+        totalDeleted++;
+        console.log(`✅ Deleted ID: ${entry.id} (${entry.pageName} - ${entry.locale})`);
+      } else {
+        const errorText = await deleteResponse.text();
+        console.log(`⚠️  Failed to delete ID: ${entry.id} - ${errorText}`);
       }
-      
-      const result = await response.json();
-      const entries = result.data || [];
-      
-      if (entries.length === 0) {
-        hasMore = false;
-        break;
-      }
-      
-      console.log(`Found ${entries.length} entries, deleting...\n`);
-      
-      // 删除每个条目
-      for (const entry of entries) {
-        try {
-          const deleteResponse = await fetch(`${STRAPI_URL}/api/page-seos/${entry.id}`, {
-            method: 'DELETE',
-            headers: {
-              'Authorization': `Bearer ${API_TOKEN}`,
-              'Content-Type': 'application/json',
-            },
-          });
-          
-          if (deleteResponse.ok) {
-            totalDeleted++;
-            console.log(`   ✅ Deleted entry ID: ${entry.id} (${entry.attributes?.pageName || 'unknown'})`);
-          } else {
-            console.log(`   ⚠️  Failed to delete entry ID: ${entry.id}`);
-          }
-        } catch (error) {
-          console.error(`   ❌ Error deleting entry ID: ${entry.id}`, error.message);
-        }
-      }
-      
-      // 等待一下让数据库更新
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
     } catch (error) {
-      console.error('❌ Error:', error.message);
-      hasMore = false;
+      console.error(`❌ Error deleting ID: ${entry.id}`, error.message);
     }
   }
   
-  console.log(`\n✅ Total deleted: ${totalDeleted} entries`);
-  console.log('\n🎉 All Page SEO data has been cleaned!\n');
+  console.log(`\n✅ Total deleted: ${totalDeleted} / ${allEntriesToDelete.length} entries`);
+  console.log('\n🎉 Cleanup completed!\n');
 }
 
 deleteAllEntries().catch(error => {

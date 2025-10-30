@@ -8,6 +8,7 @@ const path = require('path');
 
 const STRAPI_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 const API_TOKEN = process.env.STRAPI_API_TOKEN;
+const SITE_URL = process.env.SITE_URL || 'https://www.brainco.cn';
 
 if (!API_TOKEN) {
   console.error('❌ Error: STRAPI_API_TOKEN environment variable is not set!');
@@ -27,31 +28,91 @@ const stats = {
 };
 
 /**
- * 删除所有现有的 SEO 条目
+ * 映射 Strapi locale 到 URL locale
+ */
+function mapLocaleToURL(strapiLocale) {
+  const urlLocaleMap = {
+    'zh-Hans': 'zh-CN',
+    'en': 'en-US',
+    'zh-Hant': 'zh-TW'
+  };
+  return urlLocaleMap[strapiLocale] || 'zh-CN';
+}
+
+/**
+ * 生成 canonical URL
+ */
+function generateCanonicalURL(pagePath, strapiLocale) {
+  const urlLocale = mapLocaleToURL(strapiLocale);
+  const localePrefix = urlLocale === 'zh-CN' ? '' : `/${urlLocale}`;
+  return `${SITE_URL}${localePrefix}${pagePath}`;
+}
+
+/**
+ * 生成 Publisher 的 Structured Data (Schema.org)
+ */
+function generatePublisherSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'BrainCo',
+    'url': SITE_URL,
+    'logo': `${SITE_URL}/logo.webp`,
+    'sameAs': [
+      // 可以添加社交媒体链接
+    ]
+  };
+}
+
+/**
+ * 删除所有现有的 SEO 条目（包括所有语言版本）
  */
 async function deleteAllEntries() {
   console.log('\n🗑️  Step 1: Deleting existing entries...\n');
   
   try {
-    // 获取所有条目
-    const response = await fetch(`${STRAPI_URL}/api/page-seos?pagination[limit]=100`, {
-      headers: {
-        'Authorization': `Bearer ${API_TOKEN}`,
-        'Content-Type': 'application/json',
-      },
-    });
+    let allEntries = [];
+    let page = 1;
+    let hasMore = true;
+    const pageSize = 100;
     
-    if (!response.ok) {
-      throw new Error(`Failed to fetch entries: ${response.statusText}`);
+    // 获取所有语言版本的条目
+    const locales = ['zh-Hans', 'en', 'zh-Hant'];
+    
+    for (const locale of locales) {
+      page = 1;
+      hasMore = true;
+      
+      while (hasMore) {
+        const response = await fetch(
+          `${STRAPI_URL}/api/page-seos?locale=${locale}&pagination[page]=${page}&pagination[pageSize]=${pageSize}`,
+          {
+            headers: {
+              'Authorization': `Bearer ${API_TOKEN}`,
+              'Content-Type': 'application/json',
+            },
+          }
+        );
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch entries: ${response.statusText}`);
+        }
+        
+        const result = await response.json();
+        const entries = result.data || [];
+        allEntries = allEntries.concat(entries);
+        
+        // 检查是否还有更多页
+        const pagination = result.meta?.pagination;
+        hasMore = pagination && pagination.page < pagination.pageCount;
+        page++;
+      }
     }
     
-    const result = await response.json();
-    const entries = result.data || [];
-    
-    console.log(`Found ${entries.length} entries to delete\n`);
+    console.log(`Found ${allEntries.length} entries to delete (across all locales)\n`);
     
     // 删除每个条目
-    for (const entry of entries) {
+    for (const entry of allEntries) {
       try {
         const deleteResponse = await fetch(`${STRAPI_URL}/api/page-seos/${entry.id}`, {
           method: 'DELETE',
@@ -63,7 +124,7 @@ async function deleteAllEntries() {
         
         if (deleteResponse.ok) {
           stats.deleted++;
-          console.log(`   ✅ Deleted entry ID: ${entry.id}`);
+          console.log(`   ✅ Deleted entry ID: ${entry.id} (${entry.pageName} - ${entry.locale || 'unknown'})`);
         } else {
           console.log(`   ⚠️  Failed to delete entry ID: ${entry.id}`);
         }
@@ -72,7 +133,7 @@ async function deleteAllEntries() {
       }
     }
     
-    console.log(`\n✅ Deleted ${stats.deleted} entries\n`);
+    console.log(`\n✅ Deleted ${stats.deleted} entries in total\n`);
     
   } catch (error) {
     console.error('❌ Error fetching entries:', error.message);
@@ -107,13 +168,16 @@ async function createSEO(page) {
         metaDescription: seoContent.metaDescription,
         keywords: seoContent.keywords || '',
         metaRobots: 'index,follow',
-        canonicalURL: seoContent.canonicalURL || '',
+        canonicalURL: seoContent.canonicalURL || generateCanonicalURL(pagePath, strapiLocale),
         ogTitle: seoContent.ogTitle || seoContent.metaTitle,
         ogDescription: seoContent.ogDescription || seoContent.metaDescription,
         ogType: 'website',
         twitterCard: 'summary_large_image',
         twitterTitle: seoContent.ogTitle || seoContent.metaTitle,
         twitterDescription: seoContent.ogDescription || seoContent.metaDescription,
+        structuredData: generatePublisherSchema(),
+        publisher: 'BrainCo',
+        xRobotsTag: 'index, follow',
       };
       
       // 创建新条目

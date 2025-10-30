@@ -18,174 +18,201 @@
   "attributes": {
     "pageName": {
       "type": "string",
-      "required": true,
-      "unique": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "required": true,
+      "unique": false
     },
     "pagePath": {
       "type": "string",
-      "required": true,
-      "unique": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
-    },
-    "locale": {
-      "type": "enumeration",
-      "enum": ["zh-Hans", "en", "zh-Hant"],
+      },
       "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "unique": false
     },
     "metaTitle": {
       "type": "string",
-      "required": true,
-      "maxLength": 60,
-      "minLength": 10,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "minLength": 10,
+      "maxLength": 60,
+      "required": true
     },
     "metaDescription": {
       "type": "text",
-      "required": true,
-      "maxLength": 160,
-      "minLength": 50,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "minLength": 50,
+      "maxLength": 160,
+      "required": true
     },
     "keywords": {
       "type": "text",
-      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
+    },
+    "publisher": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": "BrainCo",
+      "required": false
     },
     "metaRobots": {
       "type": "string",
-      "default": "index,follow",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "default": "index,follow"
+    },
+    "xRobotsTag": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": "index, follow",
+      "enum": [
+        "index, follow",
+        "noindex, nofollow",
+        "index, nofollow",
+        "noindex, follow"
+      ]
     },
     "canonicalURL": {
       "type": "string",
-      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": false
     },
     "ogTitle": {
       "type": "string",
-      "required": false,
-      "maxLength": 60,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "maxLength": 60,
+      "required": false
     },
     "ogDescription": {
       "type": "text",
-      "required": false,
-      "maxLength": 160,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "maxLength": 160,
+      "required": false
     },
     "ogImage": {
       "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images"],
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "ogType": {
       "type": "enumeration",
-      "enum": ["website", "article", "product"],
-      "default": "website",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "default": "website",
+      "enum": [
+        "website",
+        "article",
+        "product"
+      ]
     },
     "twitterCard": {
       "type": "enumeration",
-      "enum": ["summary", "summary_large_image", "app", "player"],
-      "default": "summary_large_image",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "default": "summary_large_image",
+      "enum": [
+        "summary",
+        "summary_large_image",
+        "app",
+        "player"
+      ]
     },
     "twitterTitle": {
       "type": "string",
-      "required": false,
-      "maxLength": 60,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "maxLength": 60,
+      "required": false
     },
     "twitterDescription": {
       "type": "text",
-      "required": false,
-      "maxLength": 160,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "maxLength": 160,
+      "required": false
     },
     "twitterImage": {
       "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images"],
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      }
+      },
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "structuredData": {
       "type": "json",
-      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": false
     }
   }
 }
-
