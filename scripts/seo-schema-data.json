@@ -1,0 +1,1362 @@
+{
+  "pages": [
+    {
+      "pageName": "home",
+      "pagePath": "/",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "BrainCo强脑科技 - 全球领先的脑机接口技术公司 | 智能仿生手·脑控轮椅·专注力训练",
+          "metaDescription": "BrainCo强脑科技是源自哈佛的脑机接口技术领导者，拥有200+核心专利。提供智能仿生手、脑控轮椅、专注力训练、康复机器人等创新产品，服务教育、医疗康复、健康管理领域。",
+          "keywords": "BrainCo, 强脑科技, 脑机接口, BCI技术, 智能仿生手, 脑控轮椅, 专注力训练, 康复机器人, 非侵入式脑机接口",
+          "ogTitle": "BrainCo强脑科技 - 用脑科学技术改变世界",
+          "ogDescription": "哈佛创新实验室孵化，200+专利技术，服务全球60+国家。提供智能仿生手、脑控轮椅、专注力训练等创新脑机接口解决方案。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://www.brainco.cn/#organization",
+              "name": "BrainCo",
+              "alternateName": "强脑科技",
+              "url": "https://www.brainco.cn",
+              "logo": "https://www.brainco.cn/logo.webp",
+              "description": "全球领先的脑机接口技术公司，源自哈佛，拥有200+核心专利",
+              "foundingDate": "2015",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "CN"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "BrainCo - Global Leader in Brain-Computer Interface",
+          "metaDescription": "Harvard-born BCI leader with 200+ patents. Prosthetic hands, brain-controlled wheelchairs, focus training for education, healthcare & wellness.",
+          "keywords": "BrainCo, brain-computer interface, BCI technology, prosthetic hand, brain-controlled wheelchair, focus training, rehabilitation robot, non-invasive BCI",
+          "ogTitle": "BrainCo - Changing the World with Neuroscience",
+          "ogDescription": "Harvard Innovation Lab graduate with 200+ patents, serving 60+ countries. Innovative BCI solutions including prosthetic hands, wheelchairs, and focus training.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://www.brainco.cn/#organization",
+              "name": "BrainCo",
+              "url": "https://www.brainco.cn",
+              "logo": "https://www.brainco.cn/logo.webp",
+              "description": "Global leader in brain-computer interface technology from Harvard with 200+ patents",
+              "foundingDate": "2015"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "BrainCo強腦科技 - 全球領先的腦機接口技術公司 | 智能仿生手·腦控輪椅·專注力訓練",
+          "metaDescription": "BrainCo強腦科技是源自哈佛的腦機接口技術領導者，擁有200+核心專利。提供智能仿生手、腦控輪椅、專注力訓練、康復機器人等創新產品，服務教育、醫療康復、健康管理領域。",
+          "keywords": "BrainCo, 強腦科技, 腦機接口, BCI技術, 智能仿生手, 腦控輪椅, 專注力訓練, 康復機器人, 非侵入式腦機接口",
+          "ogTitle": "BrainCo強腦科技 - 用腦科學技術改變世界",
+          "ogDescription": "哈佛創新實驗室孵化，200+專利技術，服務全球60+國家。提供智能仿生手、腦控輪椅、專注力訓練等創新腦機接口解決方案。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "@id": "https://www.brainco.cn/#organization",
+              "name": "BrainCo",
+              "alternateName": "強腦科技",
+              "url": "https://www.brainco.cn",
+              "logo": "https://www.brainco.cn/logo.webp",
+              "description": "全球領先的腦機接口技術公司，源自哈佛，擁有200+核心專利",
+              "foundingDate": "2015"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "about",
+      "pagePath": "/about",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "关于我们 - BrainCo强脑科技 | 全球领先的脑机接口技术公司",
+          "metaDescription": "BrainCo强脑科技是全球领先的非侵入式脑机接口技术公司，致力于用脑科学技术赋能教育、医疗健康和人机交互领域。了解我们的愿景、团队和发展历程。",
+          "keywords": "BrainCo, 强脑科技, 脑机接口, 关于我们, 公司介绍, 脑科学技术, 非侵入式BCI",
+          "ogTitle": "关于BrainCo - 用脑科学改变世界",
+          "ogDescription": "探索BrainCo如何通过创新的脑机接口技术，为教育、医疗和康复领域带来革命性变革。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "关于我们 - BrainCo强脑科技",
+              "description": "BrainCo强脑科技是全球领先的非侵入式脑机接口技术公司",
+              "url": "https://www.brainco.cn/about",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "alternateName": "强脑科技",
+                "url": "https://www.brainco.cn",
+                "foundingDate": "2015"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "About Us - BrainCo | Brain-Computer Interface Leader",
+          "metaDescription": "BrainCo is a global leader in non-invasive BCI technology, empowering education and healthcare. Learn about our vision and team.",
+          "keywords": "BrainCo, brain-computer interface, about us, BCI technology, neuroscience, non-invasive BCI",
+          "ogTitle": "About BrainCo - Changing the World with Neuroscience",
+          "ogDescription": "Discover how BrainCo is revolutionizing education, healthcare, and rehabilitation through innovative BCI technology.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "About Us - BrainCo",
+              "description": "BrainCo is a global leader in non-invasive BCI technology",
+              "url": "https://www.brainco.cn/en/about",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn",
+                "foundingDate": "2015"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "關於我們 - BrainCo強腦科技 | 全球領先的腦機接口技術公司",
+          "metaDescription": "BrainCo強腦科技是全球領先的非侵入式腦機接口技術公司，致力於用腦科學技術賦能教育、醫療健康和人機交互領域。了解我們的願景、團隊和發展歷程。",
+          "keywords": "BrainCo, 強腦科技, 腦機接口, 關於我們, 公司介紹, 腦科學技術, 非侵入式BCI",
+          "ogTitle": "關於BrainCo - 用腦科學改變世界",
+          "ogDescription": "探索BrainCo如何通過創新的腦機接口技術，為教育、醫療和康復領域帶來革命性變革。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "關於我們 - BrainCo強腦科技",
+              "description": "BrainCo強腦科技是全球領先的非侵入式腦機接口技術公司",
+              "url": "https://www.brainco.cn/zh-Hant/about",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "alternateName": "強腦科技",
+                "url": "https://www.brainco.cn",
+                "foundingDate": "2015"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "company",
+      "pagePath": "/company",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "公司介绍 - BrainCo强脑科技 | 脑机接口行业领导者",
+          "metaDescription": "BrainCo成立于2015年，源自哈佛大学创新实验室，拥有200+核心专利。了解我们的里程碑、荣誉资质和全球布局，见证脑机接口技术的创新之路。",
+          "keywords": "BrainCo公司, 强脑科技, 哈佛创新实验室, 脑机接口专利, 公司发展历程, 企业荣誉",
+          "ogTitle": "BrainCo公司 - 源自哈佛的脑机接口创新企业",
+          "ogDescription": "从哈佛创新实验室走出的脑机接口科技公司，拥有200+专利，服务全球60+国家和地区。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "公司介绍 - BrainCo强脑科技",
+              "description": "BrainCo成立于2015年，源自哈佛大学创新实验室，拥有200+核心专利",
+              "url": "https://www.brainco.cn/company"
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Company Profile - BrainCo | BCI Industry Leader",
+          "metaDescription": "Founded in 2015 from Harvard Innovation Lab, BrainCo holds 200+ core patents. Explore our milestones and global presence in BCI.",
+          "keywords": "BrainCo company, Harvard Innovation Lab, BCI patents, company history, corporate achievements",
+          "ogTitle": "BrainCo - Harvard-Born Brain-Computer Interface Innovator",
+          "ogDescription": "A Harvard Innovation Lab graduate with 200+ patents, serving 60+ countries worldwide in BCI technology.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "Company Profile - BrainCo",
+              "description": "Founded in 2015 from Harvard Innovation Lab with 200+ core patents",
+              "url": "https://www.brainco.cn/en/company"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "公司介紹 - BrainCo強腦科技 | 腦機接口行業領導者",
+          "metaDescription": "BrainCo成立於2015年，源自哈佛大學創新實驗室，擁有200+核心專利。了解我們的里程碑、榮譽資質和全球佈局，見證腦機接口技術的創新之路。",
+          "keywords": "BrainCo公司, 強腦科技, 哈佛創新實驗室, 腦機接口專利, 公司發展歷程, 企業榮譽",
+          "ogTitle": "BrainCo公司 - 源自哈佛的腦機接口創新企業",
+          "ogDescription": "從哈佛創新實驗室走出的腦機接口科技公司，擁有200+專利，服務全球60+國家和地區。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "name": "公司介紹 - BrainCo強腦科技",
+              "description": "BrainCo成立於2015年，源自哈佛大學創新實驗室，擁有200+核心專利",
+              "url": "https://www.brainco.cn/zh-Hant/company"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "contact",
+      "pagePath": "/contact",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "联系我们 - BrainCo强脑科技 | 咨询与合作",
+          "metaDescription": "联系BrainCo强脑科技，获取产品咨询、商务合作、技术支持或媒体联络。我们在全球设有多个办公室，随时为您提供专业服务和支持。",
+          "keywords": "联系BrainCo, 产品咨询, 商务合作, 技术支持, 联系方式, 客服电话",
+          "ogTitle": "联系BrainCo - 开启脑机接口技术合作之旅",
+          "ogDescription": "无论是产品咨询、商务洽谈还是技术合作，BrainCo团队随时为您服务。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "联系我们 - BrainCo强脑科技",
+              "description": "联系BrainCo强脑科技，获取产品咨询、商务合作、技术支持",
+              "url": "https://www.brainco.cn/contact"
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Contact Us - BrainCo | Inquiries & Partnerships",
+          "metaDescription": "Contact BrainCo for product inquiries, business partnerships, technical support, or media relations. We have offices globally and are ready to assist you.",
+          "keywords": "contact BrainCo, product inquiry, business partnership, technical support, contact information",
+          "ogTitle": "Contact BrainCo - Start Your BCI Technology Journey",
+          "ogDescription": "Whether it's product consultation, business collaboration, or technical partnership, BrainCo team is here to help.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact Us - BrainCo",
+              "description": "Contact BrainCo for product inquiries, business partnerships, technical support",
+              "url": "https://www.brainco.cn/en/contact"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "聯繫我們 - BrainCo強腦科技 | 諮詢與合作",
+          "metaDescription": "聯繫BrainCo強腦科技，獲取產品諮詢、商務合作、技術支持或媒體聯絡。我們在全球設有多個辦公室，隨時為您提供專業服務和支持。",
+          "keywords": "聯繫BrainCo, 產品諮詢, 商務合作, 技術支持, 聯繫方式, 客服電話",
+          "ogTitle": "聯繫BrainCo - 開啟腦機接口技術合作之旅",
+          "ogDescription": "無論是產品諮詢、商務洽談還是技術合作，BrainCo團隊隨時為您服務。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "聯繫我們 - BrainCo強腦科技",
+              "description": "聯繫BrainCo強腦科技，獲取產品諮詢、商務合作、技術支持",
+              "url": "https://www.brainco.cn/zh-Hant/contact"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "technology",
+      "pagePath": "/technology",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "脑机接口技术 - BrainCo强脑科技 | 200+核心专利领先全球",
+          "metaDescription": "BrainCo以技术为核心，拥有领先的科学家团队和200余项核心发明专利。深入了解我们的脑电信号采集、神经反馈、AI算法等前沿脑机接口技术。",
+          "keywords": "脑机接口技术, BCI技术, 脑电信号, EEG, 神经反馈, 人工智能算法, 核心专利",
+          "ogTitle": "BrainCo脑机接口技术 - 科研驱动的创新突破",
+          "ogDescription": "200+专利技术，哈佛科学家团队，引领全球脑机接口技术创新。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "脑机接口技术 - BrainCo强脑科技",
+              "description": "200+核心专利，领先的脑电信号采集、神经反馈、AI算法技术",
+              "url": "https://www.brainco.cn/technology"
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "BCI Technology - BrainCo | 200+ Core Patents",
+          "metaDescription": "BrainCo is technology-driven with 200+ patents. Explore our advanced BCI technology including EEG, neurofeedback, and AI algorithms.",
+          "keywords": "brain-computer interface, BCI technology, EEG signals, neurofeedback, AI algorithms, core patents",
+          "ogTitle": "BrainCo BCI Technology - Research-Driven Innovation",
+          "ogDescription": "200+ patented technologies, Harvard scientist team, leading global BCI innovation.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "BCI Technology - BrainCo",
+              "description": "200+ core patents in EEG, neurofeedback, and AI algorithms",
+              "url": "https://www.brainco.cn/en/technology"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "腦機接口技術 - BrainCo強腦科技 | 200+核心專利領先全球",
+          "metaDescription": "BrainCo以技術為核心，擁有領先的科學家團隊和200餘項核心發明專利。深入了解我們的腦電信號採集、神經反饋、AI算法等前沿腦機接口技術。",
+          "keywords": "腦機接口技術, BCI技術, 腦電信號, EEG, 神經反饋, 人工智能算法, 核心專利",
+          "ogTitle": "BrainCo腦機接口技術 - 科研驅動的創新突破",
+          "ogDescription": "200+專利技術，哈佛科學家團隊，引領全球腦機接口技術創新。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "腦機接口技術 - BrainCo強腦科技",
+              "description": "200+核心專利，領先的腦電信號採集、神經反饋、AI算法技術",
+              "url": "https://www.brainco.cn/zh-Hant/technology"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "brain-robotics",
+      "pagePath": "/products/brain-robotics",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "BrainRobotics智能仿生手 - 脑控假肢 | BrainCo强脑科技",
+          "metaDescription": "BrainRobotics智能仿生手采用先进的肌电信号识别技术，让上肢截肢者重获灵巧的双手。FDA认证，超过95%的动作识别准确率，改变残障人士生活。",
+          "keywords": "智能仿生手, BrainRobotics, 脑控假肢, 肌电假肢, 上肢康复, FDA认证假肢",
+          "ogTitle": "BrainRobotics - 用科技重塑双手的力量",
+          "ogDescription": "FDA认证的智能仿生手，95%+识别准确率，让截肢者重新掌控生活。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "BrainRobotics智能仿生手",
+              "description": "采用先进的肌电信号识别技术，让上肢截肢者重获灵巧的双手。FDA认证，超过95%的动作识别准确率",
+              "deviceCategory": "康复医疗设备",
+              "purpose": "上肢康复与辅助",
+              "image": "https://www.brainco.cn/images/brain-robotics-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "首页",
+                  "item": "https://www.brainco.cn"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "产品中心",
+                  "item": "https://www.brainco.cn/products"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "BrainRobotics智能仿生手",
+                  "item": "https://www.brainco.cn/products/brain-robotics"
+                }
+              ]
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "BrainRobotics Prosthetic Hand | FDA-Certified BCI",
+          "metaDescription": "BrainRobotics prosthetic hand uses advanced EMG recognition, enabling amputees to regain hand function. FDA-certified with 95%+ accuracy.",
+          "keywords": "prosthetic hand, BrainRobotics, brain-controlled prosthesis, EMG prosthesis, upper limb rehabilitation, FDA certified",
+          "ogTitle": "BrainRobotics - Redefining Possibilities with Technology",
+          "ogDescription": "FDA-certified prosthetic hand with 95%+ accuracy, empowering amputees to reclaim their lives.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "BrainRobotics Prosthetic Hand",
+              "description": "Advanced EMG recognition technology enabling amputees to regain hand function. FDA-certified with 95%+ accuracy",
+              "deviceCategory": "Rehabilitation Medical Device",
+              "purpose": "Upper limb rehabilitation and assistance",
+              "image": "https://www.brainco.cn/images/brain-robotics-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.brainco.cn/en"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Products",
+                  "item": "https://www.brainco.cn/en/products"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "BrainRobotics Prosthetic Hand",
+                  "item": "https://www.brainco.cn/en/products/brain-robotics"
+                }
+              ]
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "BrainRobotics智能仿生手 - 腦控假肢 | BrainCo強腦科技",
+          "metaDescription": "BrainRobotics智能仿生手採用先進的肌電信號識別技術，讓上肢截肢者重獲靈巧的雙手。FDA認證，超過95%的動作識別準確率，改變殘障人士生活。",
+          "keywords": "智能仿生手, BrainRobotics, 腦控假肢, 肌電假肢, 上肢康復, FDA認證假肢",
+          "ogTitle": "BrainRobotics - 用科技重塑雙手的力量",
+          "ogDescription": "FDA認證的智能仿生手，95%+識別準確率，讓截肢者重新掌控生活。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "BrainRobotics智能仿生手",
+              "description": "採用先進的肌電信號識別技術，讓上肢截肢者重獲靈巧的雙手。FDA認證，超過95%的動作識別準確率",
+              "deviceCategory": "康復醫療設備",
+              "purpose": "上肢康復與輔助",
+              "image": "https://www.brainco.cn/images/brain-robotics-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "mobius",
+      "pagePath": "/products/mobius",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Mobius脑控轮椅 - 意念控制移动 | BrainCo强脑科技",
+          "metaDescription": "Mobius是全球首款消费级脑控轮椅，采用脑机接口技术，让严重运动障碍患者通过脑电波控制轮椅移动。解放双手，重获行动自由。",
+          "keywords": "脑控轮椅, Mobius, 意念控制, 脑机接口轮椅, 残障辅具, 运动障碍康复",
+          "ogTitle": "Mobius - 用意念掌控移动的自由",
+          "ogDescription": "全球首款消费级脑控轮椅，让重度运动障碍患者重获行动自由。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Mobius脑控轮椅",
+              "description": "全球首款消费级脑控轮椅，采用脑机接口技术，让严重运动障碍患者通过脑电波控制轮椅移动",
+              "deviceCategory": "医疗辅助设备",
+              "purpose": "运动障碍患者移动辅助",
+              "image": "https://www.brainco.cn/images/mobius-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "首页",
+                  "item": "https://www.brainco.cn"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "产品中心",
+                  "item": "https://www.brainco.cn/products"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Mobius脑控轮椅",
+                  "item": "https://www.brainco.cn/products/mobius"
+                }
+              ]
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Mobius Brain-Controlled Wheelchair | Mind Control",
+          "metaDescription": "Mobius is the world's first consumer BCI wheelchair, enabling mobility-impaired patients to control movement through brainwaves.",
+          "keywords": "brain-controlled wheelchair, Mobius, mind control, BCI wheelchair, disability aids, mobility rehabilitation",
+          "ogTitle": "Mobius - Control Your Movement with Your Mind",
+          "ogDescription": "World's first consumer-grade brain-controlled wheelchair, restoring mobility for severely impaired patients.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Mobius Brain-Controlled Wheelchair",
+              "description": "World's first consumer BCI wheelchair, enabling mobility-impaired patients to control movement through brainwaves",
+              "deviceCategory": "Medical Assistive Device",
+              "purpose": "Mobility assistance for motor-impaired patients",
+              "image": "https://www.brainco.cn/images/mobius-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Mobius腦控輪椅 - 意念控制移動 | BrainCo強腦科技",
+          "metaDescription": "Mobius是全球首款消費級腦控輪椅，採用腦機接口技術，讓嚴重運動障礙患者通過腦電波控制輪椅移動。解放雙手，重獲行動自由。",
+          "keywords": "腦控輪椅, Mobius, 意念控制, 腦機接口輪椅, 殘障輔具, 運動障礙康復",
+          "ogTitle": "Mobius - 用意念掌控移動的自由",
+          "ogDescription": "全球首款消費級腦控輪椅，讓重度運動障礙患者重獲行動自由。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Mobius腦控輪椅",
+              "description": "全球首款消費級腦控輪椅，採用腦機接口技術，讓嚴重運動障礙患者通過腦電波控制輪椅移動",
+              "deviceCategory": "醫療輔助設備",
+              "purpose": "運動障礙患者移動輔助",
+              "image": "https://www.brainco.cn/images/mobius-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "revo1",
+      "pagePath": "/products/revo1",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Revo1单手康复机器人 - 上肢康复训练 | BrainCo强脑科技",
+          "metaDescription": "Revo1单手康复机器人结合脑机接口和神经反馈技术，为中风偏瘫患者提供个性化上肢康复训练。医疗级认证，显著提升康复效果，加速运动功能恢复。",
+          "keywords": "康复机器人, Revo1, 上肢康复, 中风康复, 偏瘫训练, 神经反馈康复",
+          "ogTitle": "Revo1 - 加速中风患者康复之路",
+          "ogDescription": "医疗级康复机器人，结合BCI技术，显著提升中风偏瘫患者上肢功能恢复。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Revo1单手康复机器人",
+              "description": "结合脑机接口和神经反馈技术，为中风偏瘫患者提供个性化上肢康复训练",
+              "deviceCategory": "康复医疗设备",
+              "purpose": "中风患者上肢康复训练",
+              "image": "https://www.brainco.cn/images/revo1-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Revo1 Single-Hand Rehab Robot | Stroke Recovery",
+          "metaDescription": "Revo1 combines BCI and neurofeedback for personalized upper limb rehabilitation. Medical-grade certified for stroke patients.",
+          "keywords": "rehabilitation robot, Revo1, upper limb recovery, stroke rehabilitation, hemiplegia training, neurofeedback rehab",
+          "ogTitle": "Revo1 - Accelerating Stroke Recovery Journey",
+          "ogDescription": "Medical-grade rehabilitation robot with BCI technology, significantly improving upper limb function recovery for stroke patients.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Revo1 Single-Hand Rehab Robot",
+              "description": "Combines BCI and neurofeedback for personalized upper limb rehabilitation for stroke patients",
+              "deviceCategory": "Rehabilitation Medical Device",
+              "purpose": "Upper limb rehabilitation for stroke patients",
+              "image": "https://www.brainco.cn/images/revo1-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Revo1單手康復機器人 - 上肢康復訓練 | BrainCo強腦科技",
+          "metaDescription": "Revo1單手康復機器人結合腦機接口和神經反饋技術，為中風偏癱患者提供個性化上肢康復訓練。醫療級認證，顯著提升康復效果，加速運動功能恢復。",
+          "keywords": "康復機器人, Revo1, 上肢康復, 中風康復, 偏癱訓練, 神經反饋康復",
+          "ogTitle": "Revo1 - 加速中風患者康復之路",
+          "ogDescription": "醫療級康復機器人，結合BCI技術，顯著提升中風偏癱患者上肢功能恢復。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Revo1單手康復機器人",
+              "description": "結合腦機接口和神經反饋技術，為中風偏癱患者提供個性化上肢康復訓練",
+              "deviceCategory": "康復醫療設備",
+              "purpose": "中風患者上肢康復訓練",
+              "image": "https://www.brainco.cn/images/revo1-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "revo2",
+      "pagePath": "/products/revo2",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Revo2双手康复机器人 - 双上肢康复系统 | BrainCo强脑科技",
+          "metaDescription": "Revo2双手康复机器人提供同步双上肢康复训练，采用脑机接口技术和智能反馈系统。适用于中风、创伤等导致的双侧运动功能障碍，加速全面康复进程。",
+          "keywords": "双手康复机器人, Revo2, 双上肢康复, 中风康复系统, 智能康复设备",
+          "ogTitle": "Revo2 - 双手协同康复的智能解决方案",
+          "ogDescription": "双上肢同步训练，BCI技术驱动，全面提升康复效果。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Revo2双手康复机器人",
+              "description": "提供同步双上肢康复训练，采用脑机接口技术和智能反馈系统",
+              "deviceCategory": "康复医疗设备",
+              "purpose": "双上肢协同康复训练",
+              "image": "https://www.brainco.cn/images/revo2-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Revo2 Dual-Hand Rehab Robot | Bilateral Recovery",
+          "metaDescription": "Revo2 provides synchronized bilateral upper limb rehabilitation with BCI technology. Ideal for stroke and trauma-induced dysfunction.",
+          "keywords": "dual-hand rehabilitation robot, Revo2, bilateral upper limb recovery, stroke rehab system, intelligent rehabilitation",
+          "ogTitle": "Revo2 - Intelligent Solution for Bilateral Rehabilitation",
+          "ogDescription": "Synchronized bilateral training, BCI-driven, comprehensively improving rehabilitation outcomes.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Revo2 Dual-Hand Rehab Robot",
+              "description": "Provides synchronized bilateral upper limb rehabilitation with BCI technology",
+              "deviceCategory": "Rehabilitation Medical Device",
+              "purpose": "Bilateral upper limb rehabilitation",
+              "image": "https://www.brainco.cn/images/revo2-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Revo2雙手康復機器人 - 雙上肢康復系統 | BrainCo強腦科技",
+          "metaDescription": "Revo2雙手康復機器人提供同步雙上肢康復訓練，採用腦機接口技術和智能反饋系統。適用於中風、創傷等導致的雙側運動功能障礙，加速全面康復進程。",
+          "keywords": "雙手康復機器人, Revo2, 雙上肢康復, 中風康復系統, 智能康復設備",
+          "ogTitle": "Revo2 - 雙手協同康復的智能解決方案",
+          "ogDescription": "雙上肢同步訓練，BCI技術驅動，全面提升康復效果。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalDevice",
+              "name": "Revo2雙手康復機器人",
+              "description": "提供同步雙上肢康復訓練，採用腦機接口技術和智能反饋系統",
+              "deviceCategory": "康復醫療設備",
+              "purpose": "雙上肢協同康復訓練",
+              "image": "https://www.brainco.cn/images/revo2-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "easleep",
+      "pagePath": "/health/easleep",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "EaSleep睡眠改善头环 - 科学助眠黑科技 | BrainCo强脑科技",
+          "metaDescription": "EaSleep采用经颅微电流刺激技术(CES)，通过调节大脑神经递质，科学改善入睡困难、睡眠质量差等问题。无需药物，安全有效，让您每晚享受深度睡眠。",
+          "keywords": "睡眠改善, EaSleep, 助眠头环, CES技术, 失眠治疗, 睡眠质量提升, 无药物助眠",
+          "ogTitle": "EaSleep - 科技助力深度好眠",
+          "ogDescription": "CES技术加持，无药物依赖，科学改善睡眠质量，让每一夜都安然入睡。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "EaSleep睡眠改善头环",
+              "description": "采用经颅微电流刺激技术(CES)，科学改善入睡困难和睡眠质量",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "健康科技产品",
+              "image": "https://www.brainco.cn/images/easleep-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "EaSleep Sleep Headband | Science-Backed Sleep Tech",
+          "metaDescription": "EaSleep uses CES technology to regulate brain neurotransmitters, improving sleep quality. Drug-free, safe, and effective solution.",
+          "keywords": "sleep improvement, EaSleep, sleep headband, CES technology, insomnia treatment, sleep quality enhancement, drug-free sleep aid",
+          "ogTitle": "EaSleep - Technology for Deep, Restful Sleep",
+          "ogDescription": "CES-powered, drug-free solution for scientifically improving sleep quality and achieving peaceful nights.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "EaSleep Sleep Headband",
+              "description": "Uses CES technology to scientifically improve sleep quality",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "Health Technology",
+              "image": "https://www.brainco.cn/images/easleep-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "EaSleep睡眠改善頭環 - 科學助眠黑科技 | BrainCo強腦科技",
+          "metaDescription": "EaSleep採用經顱微電流刺激技術(CES)，通過調節大腦神經遞質，科學改善入睡困難、睡眠質量差等問題。無需藥物，安全有效，讓您每晚享受深度睡眠。",
+          "keywords": "睡眠改善, EaSleep, 助眠頭環, CES技術, 失眠治療, 睡眠質量提升, 無藥物助眠",
+          "ogTitle": "EaSleep - 科技助力深度好眠",
+          "ogDescription": "CES技術加持，無藥物依賴，科學改善睡眠質量，讓每一夜都安然入睡。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "EaSleep睡眠改善頭環",
+              "description": "採用經顱微電流刺激技術(CES)，科學改善入睡困難和睡眠質量",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "健康科技產品",
+              "image": "https://www.brainco.cn/images/easleep-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "focus-zen",
+      "pagePath": "/health/focus-zen",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Focus Zen专注力训练头环 - 提升学习效率 | BrainCo强脑科技",
+          "metaDescription": "Focus Zen通过实时脑电监测和神经反馈训练，科学提升专注力和学习效率。适用于学生、职场人士，帮助您在工作学习中保持高度专注，提高生产力。",
+          "keywords": "专注力训练, Focus Zen, 提升专注力, 脑电反馈, 学习效率提升, 注意力训练头环",
+          "ogTitle": "Focus Zen - 科学训练，专注力飞跃",
+          "ogDescription": "实时脑电监测+神经反馈，科学提升专注力，让学习工作更高效。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Focus Zen专注力训练头环",
+              "description": "通过实时脑电监测和神经反馈训练，科学提升专注力和学习效率",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "脑科学训练产品",
+              "image": "https://www.brainco.cn/images/focus-zen-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Focus Zen Training Headband | Boost Learning",
+          "metaDescription": "Focus Zen uses real-time EEG and neurofeedback to enhance focus and learning. Ideal for students and professionals.",
+          "keywords": "focus training, Focus Zen, attention enhancement, EEG neurofeedback, learning efficiency, concentration training headband",
+          "ogTitle": "Focus Zen - Science-Based Focus Enhancement",
+          "ogDescription": "Real-time EEG + neurofeedback for scientifically improving concentration and productivity.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Focus Zen Training Headband",
+              "description": "Real-time EEG and neurofeedback to enhance focus and learning efficiency",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "Neuroscience Training",
+              "image": "https://www.brainco.cn/images/focus-zen-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Focus Zen專注力訓練頭環 - 提升學習效率 | BrainCo強腦科技",
+          "metaDescription": "Focus Zen通過實時腦電監測和神經反饋訓練，科學提升專注力和學習效率。適用於學生、職場人士，幫助您在工作學習中保持高度專注，提高生產力。",
+          "keywords": "專注力訓練, Focus Zen, 提升專注力, 腦電反饋, 學習效率提升, 注意力訓練頭環",
+          "ogTitle": "Focus Zen - 科學訓練，專注力飛躍",
+          "ogDescription": "實時腦電監測+神經反饋，科學提升專注力，讓學習工作更高效。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Focus Zen專注力訓練頭環",
+              "description": "通過實時腦電監測和神經反饋訓練，科學提升專注力和學習效率",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "腦科學訓練產品",
+              "image": "https://www.brainco.cn/images/focus-zen-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "focus-xin",
+      "pagePath": "/health/focus-xin",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Focus Xin智能专注力头环 - 冥想放松训练 | BrainCo强脑科技",
+          "metaDescription": "Focus Xin结合专注力训练和放松冥想功能，通过脑波反馈帮助您在高压环境中保持心流状态。提升工作效率的同时，缓解压力，实现身心平衡。",
+          "keywords": "专注力头环, Focus Xin, 冥想训练, 压力缓解, 心流状态, 脑波反馈训练",
+          "ogTitle": "Focus Xin - 专注与放松的完美平衡",
+          "ogDescription": "专注训练+冥想放松，用脑科学技术实现高效工作与身心平衡。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Focus Xin智能专注力头环",
+              "description": "结合专注力训练和放松冥想功能，通过脑波反馈实现身心平衡",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "脑科学训练产品",
+              "image": "https://www.brainco.cn/images/focus-xin-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Focus Xin Smart Headband | Meditation & Focus",
+          "metaDescription": "Focus Xin combines attention training with meditation using brainwave feedback. Maintain flow state while relieving stress.",
+          "keywords": "focus headband, Focus Xin, meditation training, stress relief, flow state, brainwave feedback training",
+          "ogTitle": "Focus Xin - Perfect Balance of Focus and Relaxation",
+          "ogDescription": "Focus training + meditation relaxation, achieving productive work and mind-body balance with neuroscience.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Focus Xin Smart Headband",
+              "description": "Combines focus training with meditation using brainwave feedback",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "Neuroscience Training",
+              "image": "https://www.brainco.cn/images/focus-xin-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Focus Xin智能專注力頭環 - 冥想放鬆訓練 | BrainCo強腦科技",
+          "metaDescription": "Focus Xin結合專注力訓練和放鬆冥想功能，通過腦波反饋幫助您在高壓環境中保持心流狀態。提升工作效率的同時，緩解壓力，實現身心平衡。",
+          "keywords": "專注力頭環, Focus Xin, 冥想訓練, 壓力緩解, 心流狀態, 腦波反饋訓練",
+          "ogTitle": "Focus Xin - 專注與放鬆的完美平衡",
+          "ogDescription": "專注訓練+冥想放鬆，用腦科學技術實現高效工作與身心平衡。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Focus Xin智能專注力頭環",
+              "description": "結合專注力訓練和放鬆冥想功能，通過腦波反饋實現身心平衡",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "腦科學訓練產品",
+              "image": "https://www.brainco.cn/images/focus-xin-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "oxyzen",
+      "pagePath": "/health/oxyzen",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Oxyzen脑健康训练系统 - 认知能力提升 | BrainCo强脑科技",
+          "metaDescription": "Oxyzen采用神经反馈技术，针对记忆力、注意力、反应速度等认知能力进行科学训练。适用于老年人预防认知衰退、职场人士提升脑力，全面优化大脑健康。",
+          "keywords": "脑健康训练, Oxyzen, 认知能力提升, 记忆力训练, 老年认知, 神经反馈系统",
+          "ogTitle": "Oxyzen - 守护大脑健康，延缓认知衰退",
+          "ogDescription": "科学神经反馈训练，全面提升记忆力、注意力和认知能力。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Oxyzen脑健康训练系统",
+              "description": "采用神经反馈技术，针对记忆力、注意力、反应速度等认知能力进行科学训练",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "脑健康产品",
+              "image": "https://www.brainco.cn/images/oxyzen-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Oxyzen Brain Health System | Cognitive Enhancement",
+          "metaDescription": "Oxyzen uses neurofeedback to train memory, attention, and reaction speed. Ideal for seniors and professionals.",
+          "keywords": "brain health training, Oxyzen, cognitive enhancement, memory training, elderly cognition, neurofeedback system",
+          "ogTitle": "Oxyzen - Protecting Brain Health, Delaying Cognitive Decline",
+          "ogDescription": "Scientific neurofeedback training for comprehensive enhancement of memory, attention, and cognitive abilities.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Oxyzen Brain Health System",
+              "description": "Neurofeedback training for memory, attention, and cognitive enhancement",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "Brain Health",
+              "image": "https://www.brainco.cn/images/oxyzen-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Oxyzen腦健康訓練系統 - 認知能力提升 | BrainCo強腦科技",
+          "metaDescription": "Oxyzen採用神經反饋技術，針對記憶力、注意力、反應速度等認知能力進行科學訓練。適用於老年人預防認知衰退、職場人士提升腦力，全面優化大腦健康。",
+          "keywords": "腦健康訓練, Oxyzen, 認知能力提升, 記憶力訓練, 老年認知, 神經反饋系統",
+          "ogTitle": "Oxyzen - 守護大腦健康，延緩認知衰退",
+          "ogDescription": "科學神經反饋訓練，全面提升記憶力、注意力和認知能力。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Oxyzen腦健康訓練系統",
+              "description": "採用神經反饋技術，針對記憶力、注意力、反應速度等認知能力進行科學訓練",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "腦健康產品",
+              "image": "https://www.brainco.cn/images/oxyzen-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "starkids",
+      "pagePath": "/health/starkids",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "StarKids儿童专注力训练系统 - 科学提升学习能力 | BrainCo",
+          "metaDescription": "StarKids专为6-18岁儿童青少年设计，通过游戏化神经反馈训练提升专注力、自控力和学习能力。已服务全球3000+学校，帮助数十万学生提高学习成绩。",
+          "keywords": "儿童专注力训练, StarKids, 青少年学习能力, ADHD训练, 注意力缺陷改善, 学习成绩提升",
+          "ogTitle": "StarKids - 让每个孩子都能专注学习",
+          "ogDescription": "游戏化训练+科学反馈，提升儿童专注力和学习能力，已服务3000+学校。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "StarKids儿童专注力训练系统",
+              "description": "专为6-18岁儿童青少年设计，通过游戏化神经反馈训练提升专注力、自控力和学习能力",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "教育科技产品",
+              "audience": {
+                "@type": "PeopleAudience",
+                "suggestedMinAge": 6,
+                "suggestedMaxAge": 18
+              },
+              "image": "https://www.brainco.cn/images/starkids-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "StarKids Focus Training | For Children 6-18",
+          "metaDescription": "StarKids improves focus and learning through gamified neurofeedback. Serving 3000+ schools globally with proven results.",
+          "keywords": "children focus training, StarKids, youth learning ability, ADHD training, attention deficit improvement, academic performance",
+          "ogTitle": "StarKids - Helping Every Child Focus and Learn",
+          "ogDescription": "Gamified training + scientific feedback to enhance children's focus and learning, serving 3000+ schools.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "StarKids Focus Training System",
+              "description": "Gamified neurofeedback training for children aged 6-18 to improve focus and learning",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "Educational Technology",
+              "audience": {
+                "@type": "PeopleAudience",
+                "suggestedMinAge": 6,
+                "suggestedMaxAge": 18
+              },
+              "image": "https://www.brainco.cn/images/starkids-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "StarKids兒童專注力訓練系統 - 科學提升學習能力 | BrainCo",
+          "metaDescription": "StarKids專為6-18歲兒童青少年設計，通過遊戲化神經反饋訓練提升專注力、自控力和學習能力。已服務全球3000+學校，幫助數十萬學生提高學習成績。",
+          "keywords": "兒童專注力訓練, StarKids, 青少年學習能力, ADHD訓練, 注意力缺陷改善, 學習成績提升",
+          "ogTitle": "StarKids - 讓每個孩子都能專注學習",
+          "ogDescription": "遊戲化訓練+科學反饋，提升兒童專注力和學習能力，已服務3000+學校。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "StarKids兒童專注力訓練系統",
+              "description": "專為6-18歲兒童青少年設計，通過遊戲化神經反饋訓練提升專注力、自控力和學習能力",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "教育科技產品",
+              "audience": {
+                "@type": "PeopleAudience",
+                "suggestedMinAge": 6,
+                "suggestedMaxAge": 18
+              },
+              "image": "https://www.brainco.cn/images/starkids-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "brain-ai",
+      "pagePath": "/education/brain-ai",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "Brain AI智慧教育系统 - 大数据驱动教学优化 | BrainCo强脑科技",
+          "metaDescription": "Brain AI通过采集学生专注力数据，利用人工智能分析课堂效果，为教师提供个性化教学建议。已覆盖15000+教室，帮助学校实现数据驱动的精准教学。",
+          "keywords": "智慧教育, Brain AI, 教育大数据, 专注力监测, AI教学分析, 精准教学系统",
+          "ogTitle": "Brain AI - 用数据驱动教育创新",
+          "ogDescription": "专注力监测+AI分析，15000+教室的选择，让教学更科学、更高效。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Brain AI智慧教育系统",
+              "description": "通过采集学生专注力数据，利用人工智能分析课堂效果，为教师提供个性化教学建议",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "智慧教育系统",
+              "image": "https://www.brainco.cn/images/brain-ai-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Brain AI Education System | Data-Driven Teaching",
+          "metaDescription": "Brain AI uses attention data and AI to analyze classroom effectiveness. Deployed in 15,000+ classrooms for precision teaching.",
+          "keywords": "smart education, Brain AI, education big data, attention monitoring, AI teaching analysis, precision teaching system",
+          "ogTitle": "Brain AI - Driving Educational Innovation with Data",
+          "ogDescription": "Attention monitoring + AI analysis, chosen by 15,000+ classrooms for more scientific and efficient teaching.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Brain AI Education System",
+              "description": "AI-powered classroom analytics using attention data for precision teaching",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "Educational Technology",
+              "image": "https://www.brainco.cn/images/brain-ai-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "Brain AI智慧教育系統 - 大數據驅動教學優化 | BrainCo強腦科技",
+          "metaDescription": "Brain AI通過採集學生專注力數據，利用人工智能分析課堂效果，為教師提供個性化教學建議。已覆蓋15000+教室，幫助學校實現數據驅動的精準教學。",
+          "keywords": "智慧教育, Brain AI, 教育大數據, 專注力監測, AI教學分析, 精準教學系統",
+          "ogTitle": "Brain AI - 用數據驅動教育創新",
+          "ogDescription": "專注力監測+AI分析，15000+教室的選擇，讓教學更科學、更高效。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Brain AI智慧教育系統",
+              "description": "通過採集學生專注力數據，利用人工智能分析課堂效果，為教師提供個性化教學建議",
+              "brand": {
+                "@type": "Brand",
+                "name": "BrainCo"
+              },
+              "category": "智慧教育系統",
+              "image": "https://www.brainco.cn/images/brain-ai-hero.webp",
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "BrainCo",
+                "url": "https://www.brainco.cn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "news",
+      "pagePath": "/news",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "新闻资讯 - BrainCo强脑科技 | 脑机接口行业动态与产品发布",
+          "metaDescription": "获取BrainCo的最新新闻、产品发布、技术突破、行业合作和媒体报道。了解脑机接口技术如何改变教育、医疗和康复领域，关注我们的创新成果和发展动态。",
+          "keywords": "BrainCo新闻, 脑机接口资讯, 产品发布, 技术创新, 行业动态, 媒体报道",
+          "ogTitle": "BrainCo新闻 - 见证脑机接口技术创新",
+          "ogDescription": "最新产品发布、技术突破、行业合作，了解BrainCo如何用脑科学改变世界。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "name": "新闻资讯 - BrainCo强脑科技",
+              "description": "获取BrainCo的最新新闻、产品发布、技术突破、行业合作",
+              "url": "https://www.brainco.cn/news"
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "News & Updates - BrainCo | BCI Industry Insights",
+          "metaDescription": "Get the latest on BrainCo's product launches, breakthroughs, and partnerships. Learn how BCI transforms education and healthcare.",
+          "keywords": "BrainCo news, BCI updates, product launches, technology innovation, industry insights, media coverage",
+          "ogTitle": "BrainCo News - Witnessing BCI Technology Innovation",
+          "ogDescription": "Latest product launches, technological breakthroughs, partnerships - see how BrainCo is changing the world with neuroscience.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "name": "News & Updates - BrainCo",
+              "description": "Latest news, product launches, and breakthroughs from BrainCo",
+              "url": "https://www.brainco.cn/en/news"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "新聞資訊 - BrainCo強腦科技 | 腦機接口行業動態與產品發布",
+          "metaDescription": "獲取BrainCo的最新新聞、產品發布、技術突破、行業合作和媒體報導。了解腦機接口技術如何改變教育、醫療和康復領域，關注我們的創新成果和發展動態。",
+          "keywords": "BrainCo新聞, 腦機接口資訊, 產品發布, 技術創新, 行業動態, 媒體報導",
+          "ogTitle": "BrainCo新聞 - 見證腦機接口技術創新",
+          "ogDescription": "最新產品發布、技術突破、行業合作，了解BrainCo如何用腦科學改變世界。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "name": "新聞資訊 - BrainCo強腦科技",
+              "description": "獲取BrainCo的最新新聞、產品發布、技術突破、行業合作",
+              "url": "https://www.brainco.cn/zh-Hant/news"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "recruit",
+      "pagePath": "/recruit",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "加入我们 - BrainCo强脑科技招聘 | 探索脑机接口技术前沿",
+          "metaDescription": "BrainCo正在寻找充满激情的人才加入我们的团队。我们提供脑机接口、AI算法、硬件工程、市场营销等多个领域的职位。与顶尖科学家一起，用科技改变世界。",
+          "keywords": "BrainCo招聘, 脑机接口工作, AI工程师, 硬件工程师, 校园招聘, 科技公司职位",
+          "ogTitle": "加入BrainCo - 与我们一起改变未来",
+          "ogDescription": "顶尖团队、前沿技术、广阔平台，期待你的加入。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "加入我们 - BrainCo强脑科技招聘",
+              "description": "BrainCo正在寻找充满激情的人才，提供脑机接口、AI算法、硬件工程等职位",
+              "url": "https://www.brainco.cn/recruit"
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Join BrainCo Careers | Explore BCI Technology",
+          "metaDescription": "BrainCo seeks passionate talents in BCI, AI, hardware, and marketing. Work with leading scientists to change the world.",
+          "keywords": "BrainCo careers, BCI jobs, AI engineer, hardware engineer, campus recruiting, tech company positions",
+          "ogTitle": "Join BrainCo - Shape the Future Together",
+          "ogDescription": "Top team, cutting-edge technology, broad platform - we're looking for you.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Join BrainCo Careers",
+              "description": "BrainCo seeks passionate talents in BCI, AI, hardware, and marketing",
+              "url": "https://www.brainco.cn/en/recruit"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "加入我們 - BrainCo強腦科技招聘 | 探索腦機接口技術前沿",
+          "metaDescription": "BrainCo正在尋找充滿激情的人才加入我們的團隊。我們提供腦機接口、AI算法、硬件工程、市場營銷等多個領域的職位。與頂尖科學家一起，用科技改變世界。",
+          "keywords": "BrainCo招聘, 腦機接口工作, AI工程師, 硬件工程師, 校園招聘, 科技公司職位",
+          "ogTitle": "加入BrainCo - 與我們一起改變未來",
+          "ogDescription": "頂尖團隊、前沿技術、廣闊平台，期待你的加入。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "加入我們 - BrainCo強腦科技招聘",
+              "description": "BrainCo正在尋找充滿激情的人才，提供腦機接口、AI算法、硬件工程等職位",
+              "url": "https://www.brainco.cn/zh-Hant/recruit"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "jobs",
+      "pagePath": "/recruit/jobs",
+      "locales": {
+        "zh-Hans": {
+          "metaTitle": "职位列表 - BrainCo招聘 | 查看最新工作机会",
+          "metaDescription": "浏览BrainCo所有开放职位，包括算法工程师、硬件工程师、产品经理、市场专员等。找到适合你的岗位，提交简历，开启脑机接口技术职业之旅。",
+          "keywords": "BrainCo职位, 工作机会, 算法工程师招聘, 硬件工程师职位, 产品经理, 在线申请",
+          "ogTitle": "BrainCo职位列表 - 找到属于你的位置",
+          "ogDescription": "查看所有开放职位，提交申请，加入脑机接口技术创新团队。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "职位列表 - BrainCo招聘",
+              "description": "浏览BrainCo所有开放职位，包括算法工程师、硬件工程师、产品经理等",
+              "url": "https://www.brainco.cn/recruit/jobs"
+            }
+          ]
+        },
+        "en": {
+          "metaTitle": "Job Openings - BrainCo | View Latest Opportunities",
+          "metaDescription": "Browse all BrainCo positions: algorithm engineers, product managers, and more. Find your fit and start your BCI career.",
+          "keywords": "BrainCo positions, job opportunities, algorithm engineer hiring, hardware engineer jobs, product manager, online application",
+          "ogTitle": "BrainCo Job Openings - Find Your Place",
+          "ogDescription": "View all open positions, submit applications, and join the BCI technology innovation team.",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Job Openings - BrainCo",
+              "description": "Browse all BrainCo positions: algorithm engineers, product managers, and more",
+              "url": "https://www.brainco.cn/en/recruit/jobs"
+            }
+          ]
+        },
+        "zh-Hant": {
+          "metaTitle": "職位列表 - BrainCo招聘 | 查看最新工作機會",
+          "metaDescription": "瀏覽BrainCo所有開放職位，包括算法工程師、硬件工程師、產品經理、市場專員等。找到適合你的崗位，提交簡歷，開啟腦機接口技術職業之旅。",
+          "keywords": "BrainCo職位, 工作機會, 算法工程師招聘, 硬件工程師職位, 產品經理, 在線申請",
+          "ogTitle": "BrainCo職位列表 - 找到屬於你的位置",
+          "ogDescription": "查看所有開放職位，提交申請，加入腦機接口技術創新團隊。",
+          "structuredData": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "職位列表 - BrainCo招聘",
+              "description": "瀏覽BrainCo所有開放職位，包括算法工程師、硬件工程師、產品經理等",
+              "url": "https://www.brainco.cn/zh-Hant/recruit/jobs"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
