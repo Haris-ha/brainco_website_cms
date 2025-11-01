@@ -13,8 +13,10 @@
 ## ✨ 特性
 
 - 🎨 **品牌定制化** - 完全定制的 BrainCo 品牌界面
-- 🌐 **多语言支持** - 中文、英文界面
-- 🎯 **内容管理** - 文章、作者、分类、全局配置等
+- 🌐 **多语言支持** - 中文、英文界面，内容国际化
+- 🎯 **内容管理** - 文章、新闻、作者、分类、全局配置等
+- 🔍 **SEO 优化** - 完整的 SEO 配置、结构化数据支持
+- 📰 **新闻模块** - 企业新闻管理、国际化、SEO 优化
 - 🔒 **权限管理** - 基于角色的访问控制
 - 📱 **响应式设计** - 支持各种设备访问
 - 🌙 **明暗主题** - 自动适应系统主题
@@ -79,21 +81,39 @@ src/admin/
 ## 📖 内容类型
 
 ### 核心内容
-- **Article** - 文章/新闻
+- **Article** - 文章内容
+- **News** - 企业新闻（支持国际化）
+- **Page SEO** - 页面 SEO 配置（支持国际化）
 - **Author** - 作者信息
 - **Category** - 分类管理
 - **Global** - 全局配置
-- **About** - 关于页面
 
 ### API 端点
 ```
 GET /api/articles       # 获取文章列表
 GET /api/articles/:id   # 获取单篇文章
+GET /api/newses         # 获取新闻列表（支持国际化）
+GET /api/newses/:id     # 获取单条新闻
+GET /api/page-seos      # 获取 SEO 配置（支持国际化）
 GET /api/categories     # 获取分类
 GET /api/authors        # 获取作者
 GET /api/global         # 获取全局配置
-GET /api/about          # 获取关于页面
 ```
+
+### 新闻模块快速开始
+
+```bash
+# 1. 导入新闻数据
+node scripts/import-news-data.js
+
+# 2. 在 CMS 后台发布新闻
+# 访问 http://localhost:1337/admin
+# Content Manager → News → 批量发布
+```
+
+详细配置请查看：
+- 📘 [新闻模块快速开始](./docs/NEWS_QUICK_START.md)
+- 📗 [新闻 SEO 配置指南](./docs/NEWS_SEO_SETUP.md)
 
 ## 🔧 常用命令
 
@@ -232,10 +252,26 @@ pnpm run develop
 
 ## 📚 相关资源
 
+### CMS 文档
+- 🎨 [CMS 定制说明](./CMS_定制说明.md)
+- 🌐 [国际化配置说明](./docs/国际化配置说明.md)
+
+### SEO 文档
+- 📗 [SEO 架构设计](./docs/SEO_ARCHITECTURE.md)
+- 📘 [SEO 实施清单](./docs/SEO_IMPLEMENTATION_CHECKLIST.md)
+- 📙 [Page SEO 配置指南](./docs/STRAPI_SEO_SETUP.md)
+
+### 新闻模块文档
+- 🚀 [新闻模块快速开始](./docs/NEWS_QUICK_START.md)
+- 📖 [新闻 SEO 配置指南](./docs/NEWS_SEO_SETUP.md)
+
+### 脚本文档
+- 🔧 [数据导入脚本说明](./scripts/README.md)
+
+### 外部资源
 - 🌐 [BrainCo 官网](https://www.brainco.tech)
 - 📖 [Strapi 文档](https://docs.strapi.io)
-- 🎨 [定制说明](./CMS_定制说明.md)
-- 🗂️ [官网项目](./website/brainco_website_seo/)
+- 🗂️ [官网前端项目](./website/brainco_website_seo/)
 
 ## 🤝 贡献
 
@@ -250,6 +286,6 @@ Copyright © 2025 BrainCo. All rights reserved.
 <div align="center">
 
 **开发团队**: BrainCo 技术团队  
-**最后更新**: 2025年10月28日
+**最后更新**: 2025年11月1日
 
 </div>

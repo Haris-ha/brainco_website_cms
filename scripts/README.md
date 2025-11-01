@@ -1,31 +1,59 @@
-# SEO 和 Schema 数据管理
+# SEO 和数据管理脚本
 
 ## 📁 文件说明
 
 ### 脚本文件
 
+#### SEO 和 Schema 管理
 - **`merge-seo-schema.js`** - 合并 SEO 和 Schema 数据（当需要更新数据时使用）
 - **`import-seo-schema-data.js`** - 导入完整数据到 Strapi CMS
+
+#### 新闻数据管理
+- **`transform-news-data.js`** - 将原始新闻数据转换为多语言结构
+- **`import-news-multilang.js`** - 导入多语言结构的新闻数据
 
 ### 数据文件
 
 - **`seo-schema-data.json`** - 完整的 SEO 和 Schema 数据（合并后的最终数据）
+- **`../data/new.json`** - 新闻数据源文件
 
 ### 文档
 
-- **`README_SEO_SCHEMA_IMPORT.md`** - 详细使用指南
+- **`README_SEO_SCHEMA_IMPORT.md`** - SEO 数据导入详细使用指南
+- **`../docs/NEWS_SEO_SETUP.md`** - 新闻模块 SEO 配置完整指南
 
 ## 🚀 快速开始
 
-### 首次导入或重新导入全部数据
+### 导入 SEO 数据（首次或重新导入）
 
 ```bash
-# 1. 设置 API Token
+# 1. 设置 API Token（可选）
 export CMS_API_TOKEN=your_token_here
 
-# 2. 导入数据到 CMS
+# 2. 导入 SEO 和 Schema 数据到 CMS
 node scripts/import-seo-schema-data.js
 ```
+
+### 导入新闻数据
+
+```bash
+# 1. 转换为多语言结构
+node scripts/transform-news-data.js
+
+# 2. 导入多语言数据
+node scripts/import-news-multilang.js
+```
+
+**特点：**
+- 采用类似 `seo-schema-data.json` 的多语言结构
+- 为每种语言（zh-Hans, en）创建独立记录
+- 自动检查并更新已存在的记录
+- 自动发布新闻
+- Strapi 自动处理多语言关联
+
+**注意：** 
+- 建议设置 `STRAPI_API_TOKEN` 环境变量
+- SEO 配置请查看：`docs/NEWS_SEO_SETUP.md`
 
 ### 更新数据后重新导入
 
