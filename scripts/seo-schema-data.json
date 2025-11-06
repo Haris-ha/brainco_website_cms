@@ -5,11 +5,11 @@
       "pagePath": "/",
       "locales": {
         "zh-Hans": {
-          "metaTitle": "BrainCo强脑科技 - 全球领先的脑机接口技术公司 | 智能仿生手·脑控轮椅·专注力训练",
-          "metaDescription": "BrainCo强脑科技是源自哈佛的脑机接口技术领导者，拥有200+核心专利。提供智能仿生手、脑控轮椅、专注力训练、康复机器人等创新产品，服务教育、医疗康复、健康管理领域。",
-          "keywords": "BrainCo, 强脑科技, 脑机接口, BCI技术, 智能仿生手, 脑控轮椅, 专注力训练, 康复机器人, 非侵入式脑机接口",
+          "metaTitle": "BrainCo强脑科技 - 全球领先的脑机接口技术公司 | 智能仿生手·智能仿生腿·专注力训练",
+          "metaDescription": "BrainCo强脑科技是源自哈佛的脑机接口技术领导者，拥有200+核心专利。提供智能仿生手、智能仿生腿、专注力训练、康复机器人等创新产品，服务教育、医疗康复、健康管理领域。",
+          "keywords": "BrainCo, 强脑科技, 脑机接口, BCI技术, 智能仿生手, 智能仿生腿, 专注力训练, 康复机器人, 非侵入式脑机接口",
           "ogTitle": "BrainCo强脑科技 - 用脑科学技术改变世界",
-          "ogDescription": "哈佛创新实验室孵化，200+专利技术，服务全球60+国家。提供智能仿生手、脑控轮椅、专注力训练等创新脑机接口解决方案。",
+          "ogDescription": "哈佛创新实验室孵化，200+专利技术，服务全球60+国家。提供智能仿生手、智能仿生腿、专注力训练等创新脑机接口解决方案。",
           "structuredData": [
             {
               "@context": "https://schema.org",
@@ -30,10 +30,10 @@
         },
         "en": {
           "metaTitle": "BrainCo - Global Leader in Brain-Computer Interface",
-          "metaDescription": "Harvard-born BCI leader with 200+ patents. Prosthetic hands, brain-controlled wheelchairs, focus training for education, healthcare & wellness.",
-          "keywords": "BrainCo, brain-computer interface, BCI technology, prosthetic hand, brain-controlled wheelchair, focus training, rehabilitation robot, non-invasive BCI",
+          "metaDescription": "Harvard-born BCI leader with 200+ patents. Prosthetic hands, bionic legs, focus training for education, healthcare & wellness.",
+          "keywords": "BrainCo, brain-computer interface, BCI technology, prosthetic hand, bionic leg, focus training, rehabilitation robot, non-invasive BCI",
           "ogTitle": "BrainCo - Changing the World with Neuroscience",
-          "ogDescription": "Harvard Innovation Lab graduate with 200+ patents, serving 60+ countries. Innovative BCI solutions including prosthetic hands, wheelchairs, and focus training.",
+          "ogDescription": "Harvard Innovation Lab graduate with 200+ patents, serving 60+ countries. Innovative BCI solutions including prosthetic hands, bionic legs, and focus training.",
           "structuredData": [
             {
               "@context": "https://schema.org",
@@ -48,11 +48,11 @@
           ]
         },
         "zh-Hant": {
-          "metaTitle": "BrainCo強腦科技 - 全球領先的腦機接口技術公司 | 智能仿生手·腦控輪椅·專注力訓練",
-          "metaDescription": "BrainCo強腦科技是源自哈佛的腦機接口技術領導者，擁有200+核心專利。提供智能仿生手、腦控輪椅、專注力訓練、康復機器人等創新產品，服務教育、醫療康復、健康管理領域。",
-          "keywords": "BrainCo, 強腦科技, 腦機接口, BCI技術, 智能仿生手, 腦控輪椅, 專注力訓練, 康復機器人, 非侵入式腦機接口",
+          "metaTitle": "BrainCo強腦科技 - 全球領先的腦機接口技術公司 | 智能仿生手·智能仿生腿·專注力訓練",
+          "metaDescription": "BrainCo強腦科技是源自哈佛的腦機接口技術領導者，擁有200+核心專利。提供智能仿生手、智能仿生腿、專注力訓練、康復機器人等創新產品，服務教育、醫療康復、健康管理領域。",
+          "keywords": "BrainCo, 強腦科技, 腦機接口, BCI技術, 智能仿生手, 智能仿生腿, 專注力訓練, 康復機器人, 非侵入式腦機接口",
           "ogTitle": "BrainCo強腦科技 - 用腦科學技術改變世界",
-          "ogDescription": "哈佛創新實驗室孵化，200+專利技術，服務全球60+國家。提供智能仿生手、腦控輪椅、專注力訓練等創新腦機接口解決方案。",
+          "ogDescription": "哈佛創新實驗室孵化，200+專利技術，服務全球60+國家。提供智能仿生手、智能仿生腿、專注力訓練等創新腦機接口解決方案。",
           "structuredData": [
             {
               "@context": "https://schema.org",
@@ -433,19 +433,19 @@
       "pagePath": "/products/mobius",
       "locales": {
         "zh-Hans": {
-          "metaTitle": "Mobius脑控轮椅 - 意念控制移动 | BrainCo强脑科技",
-          "metaDescription": "Mobius是全球首款消费级脑控轮椅，采用脑机接口技术，让严重运动障碍患者通过脑电波控制轮椅移动。解放双手，重获行动自由。",
-          "keywords": "脑控轮椅, Mobius, 意念控制, 脑机接口轮椅, 残障辅具, 运动障碍康复",
-          "ogTitle": "Mobius - 用意念掌控移动的自由",
-          "ogDescription": "全球首款消费级脑控轮椅，让重度运动障碍患者重获行动自由。",
+          "metaTitle": "Revolimb智能仿生腿 - 实时步态调整 | BrainCo强脑科技",
+          "metaDescription": "Revolimb智能仿生腿融合脑机接口技术和人工智能算法，在穿戴者行走时可根据环境与肌肉的情况进行实时步态调整，实现高仿生体验。",
+          "keywords": "智能仿生腿, Revolimb, Mobius, 下肢假肢, 步态调整, 脑机接口假肢, 人工智能算法",
+          "ogTitle": "Revolimb智能仿生腿 - 高仿生体验的下肢假肢",
+          "ogDescription": "融合脑机接口技术和AI算法，实时步态调整，让穿戴者重获自然行走体验。",
           "structuredData": [
             {
               "@context": "https://schema.org",
               "@type": "MedicalDevice",
-              "name": "Mobius脑控轮椅",
-              "description": "全球首款消费级脑控轮椅，采用脑机接口技术，让严重运动障碍患者通过脑电波控制轮椅移动",
-              "deviceCategory": "医疗辅助设备",
-              "purpose": "运动障碍患者移动辅助",
+              "name": "Revolimb智能仿生腿",
+              "description": "融合脑机接口技术和人工智能算法的新型智能下肢，在穿戴者行走时可根据环境与肌肉的情况进行实时步态调整，实现高仿生体验",
+              "deviceCategory": "康复医疗设备",
+              "purpose": "下肢截肢者康复与辅助",
               "image": "https://www.brainco.cn/images/mobius-hero.webp",
               "manufacturer": {
                 "@type": "Organization",
@@ -472,7 +472,7 @@
                 {
                   "@type": "ListItem",
                   "position": 3,
-                  "name": "Mobius脑控轮椅",
+                  "name": "Revolimb智能仿生腿",
                   "item": "https://www.brainco.cn/products/mobius"
                 }
               ]
@@ -480,19 +480,19 @@
           ]
         },
         "en": {
-          "metaTitle": "Mobius Brain-Controlled Wheelchair | Mind Control",
-          "metaDescription": "Mobius is the world's first consumer BCI wheelchair, enabling mobility-impaired patients to control movement through brainwaves.",
-          "keywords": "brain-controlled wheelchair, Mobius, mind control, BCI wheelchair, disability aids, mobility rehabilitation",
-          "ogTitle": "Mobius - Control Your Movement with Your Mind",
-          "ogDescription": "World's first consumer-grade brain-controlled wheelchair, restoring mobility for severely impaired patients.",
+          "metaTitle": "Revolimb Bionic Leg | Intelligent Lower Limb Prosthetic",
+          "metaDescription": "Revolimb intelligent bionic leg integrates brain-computer interface technology and AI algorithms for real-time gait adjustment based on environment and muscle conditions, achieving highly bionic experience.",
+          "keywords": "bionic leg, Revolimb, Mobius, lower limb prosthetic, gait adjustment, BCI prosthetic, AI algorithms, intelligent prosthetic",
+          "ogTitle": "Revolimb Bionic Leg - Highly Bionic Lower Limb Experience",
+          "ogDescription": "Integrating BCI technology and AI algorithms for real-time gait adjustment, restoring natural walking experience for amputees.",
           "structuredData": [
             {
               "@context": "https://schema.org",
               "@type": "MedicalDevice",
-              "name": "Mobius Brain-Controlled Wheelchair",
-              "description": "World's first consumer BCI wheelchair, enabling mobility-impaired patients to control movement through brainwaves",
-              "deviceCategory": "Medical Assistive Device",
-              "purpose": "Mobility assistance for motor-impaired patients",
+              "name": "Revolimb Bionic Leg",
+              "description": "Intelligent lower limb prosthetic integrating brain-computer interface technology and AI algorithms, providing real-time gait adjustment based on environment and muscle conditions for highly bionic experience",
+              "deviceCategory": "Rehabilitation Medical Device",
+              "purpose": "Lower limb rehabilitation and assistance for amputees",
               "image": "https://www.brainco.cn/images/mobius-hero.webp",
               "manufacturer": {
                 "@type": "Organization",
@@ -503,19 +503,19 @@
           ]
         },
         "zh-Hant": {
-          "metaTitle": "Mobius腦控輪椅 - 意念控制移動 | BrainCo強腦科技",
-          "metaDescription": "Mobius是全球首款消費級腦控輪椅，採用腦機接口技術，讓嚴重運動障礙患者通過腦電波控制輪椅移動。解放雙手，重獲行動自由。",
-          "keywords": "腦控輪椅, Mobius, 意念控制, 腦機接口輪椅, 殘障輔具, 運動障礙康復",
-          "ogTitle": "Mobius - 用意念掌控移動的自由",
-          "ogDescription": "全球首款消費級腦控輪椅，讓重度運動障礙患者重獲行動自由。",
+          "metaTitle": "Revolimb智能仿生腿 - 實時步態調整 | BrainCo強腦科技",
+          "metaDescription": "Revolimb智能仿生腿融合腦機接口技術和人工智能算法，在穿戴者行走時可根據環境與肌肉的情況進行實時步態調整，實現高仿生體驗。",
+          "keywords": "智能仿生腿, Revolimb, Mobius, 下肢假肢, 步態調整, 腦機接口假肢, 人工智能算法",
+          "ogTitle": "Revolimb智能仿生腿 - 高仿生體驗的下肢假肢",
+          "ogDescription": "融合腦機接口技術和AI算法，實時步態調整，讓穿戴者重獲自然行走體驗。",
           "structuredData": [
             {
               "@context": "https://schema.org",
               "@type": "MedicalDevice",
-              "name": "Mobius腦控輪椅",
-              "description": "全球首款消費級腦控輪椅，採用腦機接口技術，讓嚴重運動障礙患者通過腦電波控制輪椅移動",
-              "deviceCategory": "醫療輔助設備",
-              "purpose": "運動障礙患者移動輔助",
+              "name": "Revolimb智能仿生腿",
+              "description": "融合腦機接口技術和人工智能算法的新型智能下肢，在穿戴者行走時可根據環境與肌肉的情況進行實時步態調整，實現高仿生體驗",
+              "deviceCategory": "康復醫療設備",
+              "purpose": "下肢截肢者康復與輔助",
               "image": "https://www.brainco.cn/images/mobius-hero.webp",
               "manufacturer": {
                 "@type": "Organization",
