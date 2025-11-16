@@ -479,6 +479,12 @@ export interface ApiNewsNews extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     coverImage: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{

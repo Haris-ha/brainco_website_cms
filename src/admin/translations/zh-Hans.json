@@ -776,6 +776,9 @@
   "plugin::content-manager.last-edited-entries.content-type-plural": "最近编辑的条目",
   "plugin::content-manager.last-edited-entries.content-type-singular": "最近编辑的条目",
   "plugin::content-manager.last-edited-entries.content-type-plural-singular": "最近编辑的条目",
+  "News": "新闻",
+  "content-manager.content-types.api::news.news.content": "正文内容",
+  "content-manager.content-types.api::news.news.sourceId": "来源 ID",
   
   "User": "用户",
   "Global": "全局",
