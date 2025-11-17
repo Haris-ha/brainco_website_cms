@@ -1,10 +1,6 @@
 module.exports = ({ env }) => ({
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
-    sessions: {
-      maxSessionLifespan: '1d',          // 管理员一次登录 Session 最大有效时间
-      maxRefreshTokenLifespan: '7d',     // 刷新 token 的最长生命周期
-    },
   },
   apiToken: {
     salt: env('API_TOKEN_SALT'),
